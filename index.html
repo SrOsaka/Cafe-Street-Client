@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cafe Street Client</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <img
+                src="./assets/bg_img_hero.png"
+                alt="decoracao"
+                class="bg-overlay-img"
+            />
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"
+                        ><img
+                            src="./assets/logo_coffe.svg"
+                            alt="logo Cafe Street"
+                    /></a>
+                    <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample"
+                    >
+                        <img
+                            style="width: 32px"
+                            src="./assets/align-text-justify-svgrepo-com.svg"
+                            alt=""
+                        />
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5
+                                class="offcanvas-title"
+                                id="offcanvasExampleLabel"
+                            >
+                                <img src="./assets/logo_coffe.svg" alt="" />
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="navbar-collapse">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="#"
+                                            >About us</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="#"
+                                            >Our Product</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="#"
+                                            >Delivery</a
+                                        >
+                                    </li>
+                                </ul>
+                                <form
+                                    class="d-flex search-content"
+                                    role="search"
+                                >
+                                    <div class="input-group">
+                                        <span
+                                            class="input-group-text bg-white border-end-0"
+                                        >
+                                            <img
+                                                src="./assets/akar-icons_search.svg"
+                                                alt="ícone"
+                                                style="
+                                                    width: 20px;
+                                                    height: 20px;
+                                                "
+                                            />
+                                        </span>
+                                        <input
+                                            type="search"
+                                            class="form-control border-start-0"
+                                            placeholder="Cappuccino"
+                                            aria-label="Search"
+                                        />
+                                    </div>
+                                    <button class="btn">
+                                        <img src="./assets/icons_cart.svg" />
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >About us</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Our Product</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Delivery</a
+                                >
+                            </li>
+                        </ul>
+                        <form class="d-flex search-content" role="search">
+                            <div class="input-group">
+                                <span
+                                    class="input-group-text bg-white border-end-0"
+                                >
+                                    <img
+                                        src="./assets/akar-icons_search.svg"
+                                        alt="ícone"
+                                        style="width: 20px; height: 20px"
+                                    />
+                                </span>
+                                <input
+                                    type="search"
+                                    class="form-control border-start-0"
+                                    placeholder="Cappuccino"
+                                    aria-label="Search"
+                                />
+                            </div>
+                            <button class="btn">
+                                <img src="./assets/icons_cart.svg" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-6 hero-coffee">
+                        <div class="hero-responsive">
+                            <h1>
+                                Enjoy your <span>coffee</span> <br />
+                                before your activity
+                            </h1>
+                            <p class="descricao-main">
+                                Boost your productivity and build your mood with
+                                a glass of coffee in the morning
+                            </p>
+                        </div>
+                        <div class="button-content">
+                            <button>
+                                Order now<img
+                                    src="./assets/Group 2.svg"
+                                    alt=""
+                                />
+                            </button>
+                            <p>More menu</p>
+                        </div>
+                    </div>
+                    <div class="col-6 hero-coffee coffee-img">
+                        <img src="./assets/img-hero.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </main>
+        <img
+            src="./assets/bg_img_hero-ii.png"
+            alt="decoracao"
+            class="bg-overlay-img-ii"
+        />
+        <div class="container">
+            <div class="row popular-content justify-content-md-center">
+                <h1 class="titulo">Popular <span class="grifado">Now</span></h1>
+                <div class="col-3 borda-gradiente">
+                    <div class="card-product">
+                        <div class="img-content">
+                            <div class="borda-gradiente-avalicao">
+                                <div class="avalicao-product">
+                                    4.8 <img src="./assets/Vector.svg" alt="" />
+                                </div>
+                            </div>
+                            <img src="./assets/img_product1.png" alt="" />
+                        </div>
+                        <div class="titulo-product-content">
+                            <h1>Vanilla Latte</h1>
+                            <h1>21 K</h1>
+                        </div>
+                        <div class="titulo-product-content">
+                            <div class="hot-cold-content">
+                                <p class="active hot">Hot</p>
+                                <p class="decline cold">Cold</p>
+                            </div>
+                            <button>
+                                <img src="./assets/cart.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 borda-gradiente card-responsivo">
+                    <div class="card-product">
+                        <div class="img-content">
+                            <div class="borda-gradiente-avalicao">
+                                <div class="avalicao-product">
+                                    4.8 <img src="./assets/Vector.svg" alt="" />
+                                </div>
+                            </div>
+                            <img src="./assets/img_product2.png" alt="" />
+                        </div>
+                        <div class="titulo-product-content">
+                            <h1>Espresso</h1>
+                            <h1>12 K</h1>
+                        </div>
+                        <div class="titulo-product-content">
+                            <div class="hot-cold-content">
+                                <p class="active hot">Hot</p>
+                                <p class="decline cold">Cold</p>
+                            </div>
+                            <button>
+                                <img src="./assets/cart.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 borda-gradiente">
+                    <div class="card-product">
+                        <div class="img-content">
+                            <div class="borda-gradiente-avalicao">
+                                <div class="avalicao-product">
+                                    4.8 <img src="./assets/Vector.svg" alt="" />
+                                </div>
+                            </div>
+                            <img src="./assets/img_product3.png" alt="" />
+                        </div>
+                        <div class="titulo-product-content">
+                            <h1>Hazelnut Latte</h1>
+                            <h1>23 K</h1>
+                        </div>
+                        <div class="titulo-product-content">
+                            <div class="hot-cold-content">
+                                <p class="active hot">Hot</p>
+                                <p class="decline cold">Cold</p>
+                            </div>
+                            <button>
+                                <img src="./assets/cart.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-cards"></div>
+        </div>
+        <div class="container-wrapper how-to-wrapper">
+            <div class="container how-to">
+                <h1 class="titulo">
+                    How to use delivery <span class="grifado">service</span>
+                </h1>
+                <div class="row how-card-content justify-content-md-center">
+                    <div class="col-4 container-how-card">
+                        <div class="how-card">
+                            <div class="img-wrapper">
+                                <img src="./assets/image-how.svg" alt="" />
+                            </div>
+                            <h1>choose your coffee</h1>
+                            <p>there are 20+ coffees for you</p>
+                        </div>
+                    </div>
+                    <div class="col-4 container-how-card">
+                        <div class="how-card">
+                            <div class="img-wrapper">
+                                <img src="./assets/image-how2.svg" alt="" />
+                            </div>
+                            <h1>we delivery it to you</h1>
+                            <p>Choose delivery service</p>
+                        </div>
+                    </div>
+                    <div class="col-4 container-how-card how-card-responsive">
+                        <div class="how-card">
+                            <div class="img-wrapper">
+                                <img src="./assets/image-how3.svg" alt="" />
+                            </div>
+                            <h1>Enjoy your coffee</h1>
+                            <p>Choose delivery service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-content">
+            <div class="container about-us">
+                <div class="row about-content">
+                    <div class="col-6 img-about">
+                        <div class="borda-gradiente">
+                            <img
+                                src="./assets/unsplash_3n3mPoGko8g.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-6 descricao-about">
+                        <h1 class="titulo">
+                            About <span class="grifado">us</span>
+                        </h1>
+                        <h1 class="titulo sub">
+                            We provide quality coffee, and ready to deliver.
+                        </h1>
+                        <p>
+                            We are a company that makes and distributes
+                            delicious drinks. our main product is made with a
+                            secret recipe and available in stores worldwide.
+                        </p>
+                        <div><button>Get your coffee</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-wrapper">
+            <div class="container menu-content">
+                <h1 class="titulo">
+                    Special menu <span class="grifado">for you</span>
+                </h1>
+                <div class="row popular-content justify-content-md-center">
+                    <div class="col-3 borda-gradiente">
+                        <div class="card-product">
+                            <div class="img-content">
+                                <div class="borda-gradiente-avalicao">
+                                    <div class="avalicao-product">
+                                        4.8
+                                        <img src="./assets/Vector.svg" alt="" />
+                                    </div>
+                                </div>
+                                <img src="./assets/img_product4.png" alt="" />
+                            </div>
+                            <div class="titulo-product-content">
+                                <h1>Sandwich</h1>
+                                <h1>12 K</h1>
+                            </div>
+                            <div class="titulo-product-content">
+                                <div class="sub-titulo">
+                                    <p>Bread with meat and vegetables</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <img src="./assets/cart.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 borda-gradiente">
+                        <div class="card-product">
+                            <div class="img-content">
+                                <div class="borda-gradiente-avalicao">
+                                    <div class="avalicao-product">
+                                        4.8
+                                        <img src="./assets/Vector.svg" alt="" />
+                                    </div>
+                                </div>
+                                <img src="./assets/img_product5.png" alt="" />
+                            </div>
+                            <div class="titulo-product-content">
+                                <h1>Hot Milk</h1>
+                                <h1>12 K</h1>
+                            </div>
+                            <div class="titulo-product-content">
+                                <div class="sub-titulo">
+                                    <p>Hot Milk with less sugar</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <img src="./assets/cart.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 borda-gradiente">
+                        <div class="card-product">
+                            <div class="img-content">
+                                <div class="borda-gradiente-avalicao">
+                                    <div class="avalicao-product">
+                                        4.8
+                                        <img src="./assets/Vector.svg" alt="" />
+                                    </div>
+                                </div>
+                                <img src="./assets/img_product6.png" alt="" />
+                            </div>
+                            <div class="titulo-product-content">
+                                <h1>Coffe Ice Cream</h1>
+                                <h1>12 K</h1>
+                            </div>
+                            <div class="titulo-product-content">
+                                <div class="sub-titulo">
+                                    <p>Coffe with ice cream vanilla</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <img src="./assets/cart.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 borda-gradiente">
+                        <div class="card-product">
+                            <div class="img-content">
+                                <div class="borda-gradiente-avalicao">
+                                    <div class="avalicao-product">
+                                        4.8
+                                        <img src="./assets/Vector.svg" alt="" />
+                                    </div>
+                                </div>
+                                <img src="./assets/img_product7.png" alt="" />
+                            </div>
+                            <div class="titulo-product-content">
+                                <h1>Cappucino</h1>
+                                <h1>12 K</h1>
+                            </div>
+                            <div class="titulo-product-content">
+                                <div class="sub-titulo">
+                                    <p>Hot Cappucino</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <img src="./assets/cart.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 borda-gradiente card-responsivo">
+                        <div class="card-product">
+                            <div class="img-content">
+                                <div class="borda-gradiente-avalicao">
+                                    <div class="avalicao-product">
+                                        4.8
+                                        <img src="./assets/Vector.svg" alt="" />
+                                    </div>
+                                </div>
+                                <img src="./assets/img_product8.png" alt="" />
+                            </div>
+                            <div class="titulo-product-content">
+                                <h1>Moccacinno</h1>
+                                <h1>12 K</h1>
+                            </div>
+                            <div class="titulo-product-content">
+                                <div class="sub-titulo">
+                                    <p>Hot Moccacino</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <img src="./assets/cart.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 borda-gradiente card-responsivo">
+                        <div class="card-product">
+                            <div class="img-content">
+                                <div class="borda-gradiente-avalicao">
+                                    <div class="avalicao-product">
+                                        4.8
+                                        <img src="./assets/Vector.svg" alt="" />
+                                    </div>
+                                </div>
+                                <img src="./assets/img_product9.png" alt="" />
+                            </div>
+                            <div class="titulo-product-content">
+                                <h1>Waffle Ice Crem</h1>
+                                <h1>12 K</h1>
+                            </div>
+                            <div class="titulo-product-content">
+                                <div class="sub-titulo">
+                                    <p>Wafle with Ice cream</p>
+                                </div>
+                                <div>
+                                    <button>
+                                        <img src="./assets/cart.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-wrapper-background">
+            <div class="container what">
+                <div class="row justify-content-md-center">
+                    <div class="col-6 what-card">
+                        <h1 class="titulo">
+                            What they say <span>about us</span>
+                        </h1>
+                        <p>
+                            We always provide the best service and always
+                            maintain the quality of coffee
+                        </p>
+                    </div>
+                    <div class="col-6 what-card-responsive what-card">
+                        <img src="./assets/Card.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-wrapper">
+            <div class="footer-wrapper">
+                <footer class="footer-content">
+                    <form
+                        class="d-flex search-content footer-search"
+                        role="search"
+                    >
+                        <h1>Subscribe to get 50% discount price</h1>
+                        <div class="input-group">
+                            <input
+                                type="search"
+                                class="form-control border-start-0"
+                                placeholder="Email address"
+                                aria-label="Search"
+                            />
+                            <span class="group-text-footer">Order now</span>
+                        </div>
+                    </form>
+                </footer>
+            </div>
+        </div>
+        <div class="container-wrapper-footer">
+            <footer
+                class="d-flex bootstrap-footer flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+                data-landmark-index="0"
+            >
+                <p class="col-md-4 mb-0 text-body-secondary">
+                        <a href="#" class="nav-link px-2 text-body-secondary">
+                            <img src="./assets/logo_coffe.svg" alt="">
+                        </a>
+                    </li>
+                </p>
+                <ul
+                    class="nav col-md-4 justify-content-end"
+                    role="navigation"
+                    data-landmark-guessed=""
+                    data-landmark-index="1"
+                >
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/srosaka2/" class="nav-link px-2 text-body-secondary"
+                            ><img
+                                style="width: 32px"
+                                src="./assets/instagram-svgrepo-com.svg"
+                                alt=""
+                        /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/SrOsaka" class="nav-link px-2 text-body-secondary"
+                            ><img
+                                style="width: 32px"
+                                src="./assets/github-142-svgrepo-com.svg"
+                                alt=""
+                        /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/anderson-gabryel-4b744331a/" class="nav-link px-2 text-body-secondary"
+                            ><img
+                                style="width: 32px"
+                                src="./assets/linkedin-svgrepo-com.svg"
+                                alt=""
+                        /></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
